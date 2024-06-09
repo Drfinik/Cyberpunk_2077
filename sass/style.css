@@ -84,9 +84,7 @@ a {
 }
 
 .about {
-  padding-left: 320px;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding: 70px 320px;
 }
 .about__title {
   padding-bottom: 25px;
@@ -109,8 +107,8 @@ a {
 }
 .about__img {
   display: grid;
-  grid-template-columns: 460px 788px;
-  grid-template-rows: repeat(2, 196px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 32px;
   grid-row-gap: 32px;
 }
