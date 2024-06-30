@@ -105,7 +105,8 @@ a {
     }
 
     &__txt {
-        width: 870px;
+        width: 75%;
+        height: auto;
         padding-bottom: 70px;
         color: #777;
         font-family: Roboto;
@@ -119,7 +120,7 @@ a {
 
     &__img {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 32px;
         grid-row-gap: 32px;
@@ -133,8 +134,14 @@ a {
         }
 
         &-3 {
-            grid-area: 1 / 2 / 3 / 3;
+            grid-area: 1 / 2 / 3 / 4;
         }
+    }
+
+    &__img img {
+        width: 100%;
+        height: 100%;
+
     }
 }
 
@@ -149,9 +156,7 @@ a {
 }
 
 .winning {
-    padding-top: 15px;
-    padding-left: 320px;
-    padding-bottom: 70px;
+    padding: 15px 320px 70px 320px;
     background-color: #000;
 
     &__header {
@@ -185,6 +190,10 @@ a {
     &__content {
         display: flex;
         gap: 32px;
+    }
+
+    &__content img {
+        width: 100%;
     }
 
     &__form {
@@ -322,6 +331,14 @@ a {
             align-items: center;
             gap: 25px;
         }
+
+        &-logo img {
+            width: 100%;
+        }
+    }
+
+    &__left img {
+        width: 100%;
     }
 
     &__right {
@@ -384,7 +401,13 @@ a {
 .buyproduct {
     display: flex;
 
+    &__img {
+        width: 55%;
+
+    }
+
     &__content {
+        width: 45%;
         padding: 70px 32px;
         background-color: #000;
 
@@ -451,7 +474,7 @@ a {
         padding: 13px 320px;
         display: flex;
         align-items: center;
-        gap: 391px;
+        justify-content: space-between;       
 
         &-img {
             display: flex;
@@ -498,7 +521,34 @@ a {
     .header__content {
         right: 150px;
     }
-    
+
+    .about {
+        padding: 70px 150px;
+    }
+
+    .winning {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .sponsor {
+        padding: 70px 150px;
+    }
+
+    .buyproduct {
+        &__content {
+            &-header {
+                padding-right: 150px;
+            }
+        }
+    }
+
+    .footer {
+        &__top {
+            padding: 13px 150px;
+        }
+    }
+
 }
 
 @media (max-width: 1280px) {
@@ -514,5 +564,30 @@ a {
     .header__content {
         right: 100px;
     }
-   
+
+    .about {
+        padding: 70px 100px;
+    }
+
+    .winning {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .sponsor {
+        padding: 70px 100px;
+    }
+
+    .buyproduct {
+        &__content {
+            &-header {
+                padding-right: 100px;
+            }
+        }
+    }
+    .footer {
+        &__top {
+            padding: 13px 100px;
+        }
+    }
 }

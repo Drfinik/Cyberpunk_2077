@@ -96,7 +96,8 @@ a {
   line-height: normal;
 }
 .about__txt {
-  width: 870px;
+  width: 75%;
+  height: auto;
   padding-bottom: 70px;
   color: #777;
   font-family: Roboto;
@@ -107,7 +108,7 @@ a {
 }
 .about__img {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 32px;
   grid-row-gap: 32px;
@@ -119,7 +120,11 @@ a {
   grid-area: 2/1/3/2;
 }
 .about__img-3 {
-  grid-area: 1/2/3/3;
+  grid-area: 1/2/3/4;
+}
+.about__img img {
+  width: 100%;
+  height: 100%;
 }
 
 .txt__select {
@@ -133,9 +138,7 @@ a {
 }
 
 .winning {
-  padding-top: 15px;
-  padding-left: 320px;
-  padding-bottom: 70px;
+  padding: 15px 320px 70px 320px;
   background-color: #000;
 }
 .winning__header {
@@ -166,6 +169,9 @@ a {
 .winning__content {
   display: flex;
   gap: 32px;
+}
+.winning__content img {
+  width: 100%;
 }
 .winning__form {
   display: flex;
@@ -290,6 +296,12 @@ a {
   align-items: center;
   gap: 25px;
 }
+.sponsor__left-logo img {
+  width: 100%;
+}
+.sponsor__left img {
+  width: 100%;
+}
 .sponsor__right {
   max-width: 558px;
 }
@@ -343,7 +355,11 @@ a {
 .buyproduct {
   display: flex;
 }
+.buyproduct__img {
+  width: 55%;
+}
 .buyproduct__content {
+  width: 45%;
   padding: 70px 32px;
   background-color: #000;
 }
@@ -401,7 +417,7 @@ a {
   padding: 13px 320px;
   display: flex;
   align-items: center;
-  gap: 391px;
+  justify-content: space-between;
 }
 .footer__top-img {
   display: flex;
@@ -442,6 +458,22 @@ a {
   .header__content {
     right: 150px;
   }
+  .about {
+    padding: 70px 150px;
+  }
+  .winning {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .sponsor {
+    padding: 70px 150px;
+  }
+  .buyproduct__content-header {
+    padding-right: 150px;
+  }
+  .footer__top {
+    padding: 13px 150px;
+  }
 }
 @media (max-width: 1280px) {
   body {
@@ -453,5 +485,21 @@ a {
   }
   .header__content {
     right: 100px;
+  }
+  .about {
+    padding: 70px 100px;
+  }
+  .winning {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .sponsor {
+    padding: 70px 100px;
+  }
+  .buyproduct__content-header {
+    padding-right: 100px;
+  }
+  .footer__top {
+    padding: 13px 100px;
   }
 }/*# sourceMappingURL=style.css.map */
